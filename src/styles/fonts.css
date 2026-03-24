@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+@theme {
+  --color-ink-900: #1C1917;
+  --color-ink-800: #3E322A;
+  --color-ink-600: #5C4A3D;
+  --color-paper-100: #FDFBF7;
+  --color-paper-200: #FAF7F2;
+  --color-paper-300: #F0EAD6;
+  --color-seal-red: #8B2624;
+  --color-gold-light: #DFCDA5;
+  --color-gold-dark: #C7A252;
+}
+
+body {
+  background-color: var(--color-paper-100);
+  color: var(--color-ink-800);
+  font-family: 'system-ui', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: 'Noto Serif SC', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-paper-300);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-ink-600);
+}
+
+.custom-scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.custom-scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Authentic Chinese vertical text utility if needed */
+.writing-vertical-rl {
+  writing-mode: vertical-rl;
+}
